@@ -1,0 +1,18 @@
+<h1>Faculties</h1>
+
+<p *ngIf="!faculties"><em>Loading...</em></p>
+
+<table class='table table-striped' *ngIf="faculties">
+  <thead>
+    <tr>     
+      <th>Name</th>      
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let faculty of faculties">    
+      <td>{{ faculty.name }}
+          <a href></a>
+      </td>            
+    </tr>
+  </tbody>
+</table>
